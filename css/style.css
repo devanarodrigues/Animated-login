@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(255, 64, 125, 1) 0%, rgba(0, 14, 255, 1) 100%);
+}
+
+main {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.346);
+
+    width: 25vw;
+    height: 70vh;
+    background-color: #FFE6E6;
+    border-radius: 10px;
+    margin: 15vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+
+.title:before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(255, 64, 125, 1) 0%, rgba(0, 14, 255, 1) 100%);
+}
+
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 0;
+    margin: 10px 0;
+}
+
+#email,
+#password {
+    width: 25vw;
+    height: 5vh;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #6c3651;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#email:focus::placeholder,
+#password:focus::placeholder {
+    transition-duration: .3s;
+    color: rgb(255, 0, 128);
+    font-size: .5em;
+    position: absolute;
+    top: 0;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+
+}
+
+#submit {
+    width: 25vw;
+    height: 7vh;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(255, 64, 125, 1) 0%, rgba(0, 14, 255, 1) 100%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.346);
+    transition-duration: 1s;
+}
+
+#submit:hover {
+    transform: translateY(-10px);
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 0;
+    margin-top: 20px;
+}
+
+main section a {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 0px;
+    width: 17vw;
+    height: 3vh;
+    text-align: center;
+    transition-duration: 1s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.346);
+}
+
+#facebook {
+    background-color: #0C359E;
+
+}
+
+#twitter {
+    background-color: #5183ff;
+}
+
+#twitter:hover,
+#facebook:hover {
+    transform: translateY(-10px);
+}
+
+main section a i {
+    margin-right: 10px;
+}
+
+h6 {
+    cursor: pointer;
+}
